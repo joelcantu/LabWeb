@@ -1,0 +1,51 @@
+<?php
+    $cookie_name = "search";
+    $cookie_value = "";
+    if(!isset($_COOKIE[$cookie_name])) {
+        setcookie($cookie_name, $cookie_value, time() + 20, "/"); // 86400 = 1 dia
+    }
+?>
+<!DOCTYPE html>
+<html>
+<head> 
+  		<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+		<title> FLORISTERIA </title>
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="JS/jquery.js"></script>
+		<script type="text/javascript" src="JS/scriptSearch.js"></script>
+	</head>
+<body>
+	<div id="top">
+		<a href="home.html">
+			<center>
+				<img src="images/logo.png" id="logo1" style="width:408px; height:124px">
+			</center>
+		</a>
+		<form id="menu">
+			<input type="text" id="searchText" name="searchText" value="" placeholder="Buscar un arreglo">
+			<input type="button" name="searchButton" id="searchButton">
+			<p>
+				<a href="home.html" id="profile">Home</a>
+				<a href="profile.html" id="profile">Profile</a>
+				<a href="wishlist.html" id="wishlist">WishList</a> 
+				<a href="contact.html" id="contact">Contact</a> 
+			</p>
+		</form>
+	</div>
+	<div class="displayList">
+		<ul id="usersListDisplay" class="friendList">
+		</ul>
+	</div>
+	<center>
+		<img src="images/logo-small.png" id="logo2" style="width:128px; height:157px">
+	</center>
+<!--     <?php
+    if(!isset($_COOKIE[$cookie_name])) {
+        echo "Cookie named '" . $cookie_name . "' is not set!";
+    } else {
+        echo "Cookie '" . $cookie_name . "' is set!";
+        echo "Value is: " . $_COOKIE[$cookie_name];
+    }
+    ?> -->
+</body>
+</html>

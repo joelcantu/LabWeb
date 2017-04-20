@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Registration</title>
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="JS/jquery.js"></script>
+		<script type="text/javascript" src="JS/scriptRegister.js"></script>
+	</head>
+	<style>
+</style>
+<body>
+	<center>
+		<img src="images/logo.png" id="logo1" style="width:408px; height:124px">
+	</center>
+	<h1>
+		Registration
+	</h1>
+	<fieldset>
+		<div>
+			First Name:
+		</div>
+		<input id="FirstName" type="text" name="FName">
+		<span id="errorFirstName"></span>
+		<div>
+			Last Name:
+		</div>
+		<input id="LastName" type="text" name="LName">
+		<span id="errorLastName"></span>
+		<div>
+			 Address:
+		</div>
+		<input id="Direccion" type="text" name="Direccion">
+		<span id="errorLabelDireccion"></span>
+		<div>
+			 Username:
+		</div>
+		<input id="Username" type="text" name="username">
+		<span id="errorUserName"></span>
+		<div>
+			 Email:
+		</div>
+		<input id="userEmail" type="text" name="email">
+		<span id="errorEmail"></span>
+		<div>
+			 Password:
+		</div>
+		<input id="Password" type="password" name="password">
+		<span id="errorPassword"></span>
+		<div>
+			Confirm Password:
+		</div>
+		<input id="ConPassword" type="password" name="confirmpassword">
+		<span id="errorPasswordCon"></span>
+		<div>
+			Gender:
+			<br>
+			<input id="male" type="radio" name="gender" value="male"> Male<br>
+			<input id="female" type="radio" name="gender" value="female"> Female<br>
+			<input id="other" type="radio" name="gender" value="other"> Other 
+			<span id="errorLabelGender"></span> 		
+		</div>
+		<div>
+			Select a Country:
+			<select id="country" name="Select a country">
+				<option value="SC">Select a country</option>
+ 				<option value="Mexico">Mexico</option>
+  				<option value="Usa">Usa</option>
+ 				<option value="Canada">Canada</option>
+  				<option value="UK">UK</option>
+  				<option value="Argentina">Argentina</option>
+  				<option value="Chile">Chile</option>
+ 				<option value="Ecuador">Ecuador</option>
+  				<option value="Colombia">Colombia</option>
+  				<option value="Honduras">Honduras</option>
+  				<option value="Japan">Japan</option>
+  				<option value="CostaRica">Costa Rica</option>
+ 				<option value="NewZealand">New Zealand</option>
+  				<option value="Rusia">Rusia</option>
+  				<option value="Portugal">Portugal</option>
+  				<option value="Venezuela">Venezuela</option>
+			</select>
+		<span id="errorLabelCountry"></span> 		
+		</div>
+		<input id="submitRegistration" type="submit" value="Register">
+		<br>
+		<br>
+		<form action="Login.html" >
+   			<input type="submit" value="Back">
+		</form>
+	</fieldset>
+	<center>
+		<img src="images/logo-small.png" id="logo2" style="width:128px; height:157px">
+	</center>
+</body>
+</html>

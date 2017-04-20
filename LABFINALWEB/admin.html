@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<?php session_start(); ?>
+<!--
+Gianna Floristeria
+Joel Cantú
+Axel Ramírez
+#E42157 color principal 
+Font: Verdana
+
+Arreglo Circular, Triángulo, Abanico
+
+-->
+<html>
+	<head> 
+  		<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+		<title> FLORISTERIA </title>
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="JS/jquery.js"></script>
+		<script type="text/javascript" src="JS/scriptAdmin.js"></script>
+
+	</head>
+<body>
+	<div id="top">
+		<a href="home.html">
+			<center>
+				<img src="images/logo.png" id="logo1" style="width:408px; height:124px">
+			</center>
+		</a>
+		<form id="menu">
+			<input type="text" name="searchBar" value="" placeholder="Buscar un arreglo">
+			<p>
+				<a href="profile.html" id="profile">Profile</a>
+				<a href="wishlist.html" id="wishlist">WishList</a> 
+				<a href="contact.html" id="contact">Contact</a> 
+			</p>
+		</form>
+	</div>
+
+	<h2>Borrar un Arreglo</h2>
+	<div id="borrar">
+		<!-- Se hace un query de todos los arreglos, se les agrega un boton de borrar junto, al hacer click al botón se obtiene su id, y se hace un query para borrar el arreglo de la BD-->
+
+	</div>
+
+
+	</div>
+	<center>
+		<img src="images/logo-small.png" id="logo2" style="width:128px; height:157px">
+	</center>
+</body>
+</html>

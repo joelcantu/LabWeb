@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Profile</title>
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="JS/jquery.js"></script>
+	<script type="text/javascript" src="JS/scriptProfile.js"></script>
+</head>
+<body>
+	<center>
+		<img src="images/logo.png" id="logo1" style="width:408px; height:124px">
+	</center>
+	<form id="menu">
+			<input type="text" id="searchText" name="searchText" value="" placeholder="Buscar un arreglo">
+			<input type="button" name="searchButton" id="searchButton">
+			<p>
+				<a href="home.html" id="profile">Home</a>
+				<a href="wishlist.html" id="wishlist">WishList</a> 
+				<a href="contact.html" id="contact">Contact</a> 
+			</p>
+	</form>
+	<fieldset>
+		<div class="container">
+			<div class="profile-head">
+				<span id="usernameProfile"> </span>
+			</div>
+			<div class="responsiv-table">
+				<table class="bio-table">
+					<tbody>
+						<tr>      
+							<td class="field"> Firstname</td>
+							<td id="firstnameProfile"> </td>
+						</tr>
+						<tr>    
+							<td class="field"> Lastname</td>
+							<td id="lastnameProfile"> </td>       
+						</tr>
+						<tr>  
+							<td class="field"> Email</td>
+							<td id="emailProfile"></td> 
+						</tr>
+						<tr>    
+							<td class="field"> Gender</td>
+							<td id="genderProfile"></td>       
+						</tr>
+						<tr>    
+							<td class="field"> Country</td>
+							<td id="countryProfile"> </td>       
+						</tr>
+					</tbody>
+				</table>
+				<br>
+			</div> 
+		</div>
+ 	</fieldset>
+</body>
+</html>
